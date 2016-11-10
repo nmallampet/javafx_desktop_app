@@ -1,0 +1,53 @@
+.menu-bar {
+    -fx-background-color: #D6DBEF;
+    -fx-border-color: #D6DBEF;
+    -fx-border-width: 2
+}
+
+.menu .label {
+    -fx-font-size: 12;
+    -fx-text-alignment: center;
+
+}
+.menu-item .label {
+    -fx-text-fill: black;
+}
+
+.menu-item:focused {
+     -fx-background-color: darkgray;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: blue;
+}
+
+.list-view {
+    -fx-background-color: transparent, transparent, transparent, transparent;
+}
+
+.list-cell {
+    -fx-background-color: #F4F4F4;
+    -fx-cell-size: 50;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: lightskyblue;
+   /* -fx-text-fill: white; */
+}
+    
+.list-cell:filled:selected {
+    -fx-background-color: -fx-background ;
+    -fx-background-insets: 0 ;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.globalbutton {
+    -fx-background-color: transparent, transparent, transparent, transparent;
+    -fx-background-image: url('imgs/global.png');
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left;
+    	
+}

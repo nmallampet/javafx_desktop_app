@@ -1,0 +1,14 @@
+createdevfile -file C:/Users/jye/Desktop/_For_QoR/trunk/conf/DiamondDevFile_3.8.0.75.0.xml
+rem Elapsed Time: 3.55 seconds
+createdevfile -file C:/Users/jye/Desktop/_For_QoR/trunk/conf/DiamondDevFile_3.7.0.96.1.xml
+rem Elapsed Time: 3.71 seconds
+createdevfile -file C:/Users/jye/Desktop/_For_QoR/trunk/conf/DiamondDevFile_3.8.0.81.0.xml
+rem Elapsed Time: 2.26 seconds
+createdevfile -file C:/Users/jye/Desktop/_For_QoR/trunk/conf/DiamondDevFile_3.8.0.88.0.xml
+rem Elapsed Time: 3.42 seconds
+createdevfile -file C:/Users/jye/Desktop/_For_QoR/trunk/conf/DiamondDevFile_3.8.0.90.0.xml
+rem Elapsed Time: 3.45 seconds
+createdevfile -file C:/Users/jye/Desktop/_For_QoR/trunk/conf/DiamondDevFile_3.8.0.92.0.xml
+rem Elapsed Time: 3.72 seconds
+createdevfile -file //lscfs02/LDC-svsw27/Document-Lib/fphillip/SQP/SQP_OP/scripts/trunk/conf/DiamondDevFile_3.8.0.53.0.xml
+rem Elapsed Time: 0.06 seconds

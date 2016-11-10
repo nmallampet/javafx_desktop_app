@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" fx:id="cellAP" prefHeight="40.0" prefWidth="230.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="solution.quality.platform.views.ListViewCellController">
+    <stylesheets>
+        <URL value="@mainCascade.css" />
+    </stylesheets>
+   <children>
+      <Circle fx:id="statusC" layoutX="15.0" layoutY="20.0" radius="12.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Label fx:id="nameL" alignment="CENTER" layoutX="27.0" prefHeight="40.0" prefWidth="203.0" />
+   </children>
+</AnchorPane>

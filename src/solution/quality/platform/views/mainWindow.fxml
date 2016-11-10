@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1072.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="solution.quality.platform.views.MainWindowController">
+    <stylesheets>
+        <URL value="@mainwindow.css" />
+    </stylesheets>
+   <children>
+      <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="1072.0" styleClass="menu" />
+      <Label fx:id="suiteNameLabel" alignment="BOTTOM_CENTER" layoutY="25.0" prefHeight="30.0" prefWidth="250.0" text="Suite">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="testCasesLabel" alignment="BOTTOM_CENTER" layoutX="250.0" layoutY="25.0" prefHeight="30.0" prefWidth="250.0" text="TestCases:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TabPane fx:id="testCaseTabPane" layoutX="500.0" layoutY="25.0" prefHeight="545.0" prefWidth="572.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="PropTab" text="Properties">
+            <content>
+              <AnchorPane fx:id="propAP" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab fx:id="ResultsTab" text="Results">
+              <content>
+                <AnchorPane fx:id="resAP" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ListView fx:id="suiteListView" layoutY="55.0" onMouseClicked="#SuiteCellOnClick" prefHeight="515.0" prefWidth="250.0" />
+      <ListView fx:id="testCaseListView" layoutX="250.0" layoutY="55.0" onMouseClicked="#TestCaseCellOnClick" prefWidth="250.0" stylesheets="@mainCascade.css" />
+      <ToolBar fx:id="bottomBar" layoutY="570.0" prefHeight="30.0" prefWidth="1072.0">
+         <items>
+            <Button fx:id="globalEDAB" maxHeight="20.0" mnemonicParsing="false" onAction="#globalEDAclick" prefHeight="20.0" prefWidth="25.0" styleClass="globalbutton" />
+         </items></ToolBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+.tf-underLine {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent black transparent;
+    -fx-padding: 0px 0px -2px 0px;
+}
+
+
+.status-pass {
+    -fx-fill:green
+}
+
+.status-fail {
+    -fx-fill: red;
+}
+
+.status-progress {
+    -fx-fill: yellow;
+}
+
+.segmented-button-bar .button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 1 1 1 0, 2 1 1 1;
+    -fx-background-radius: 0;
+    -fx-padding: 0.4em 1.833333em 0.4em 1.833333em;
+}
+ 
+.segmented-button-bar .button.first {
+    -fx-background-insets: 0, 1, 2 1 1 1;
+    -fx-background-radius: 3 0 0 3, 2 0 0 2, 2 0 0 2;
+}
+ 
+.segmented-button-bar .button.last {
+    -fx-background-insets: 0, 1 1 1 0, 2 1 1 1;
+    -fx-background-radius: 0 3 3 0, 0 2 2 0, 0 2 2 0;
+}
+ 
+.list-view {
+    -fx-background-color: transparent, transparent, transparent, transparent;
+}
+
+.list-cell {
+    -fx-background-color: lightyellow;
+    -fx-cell-size: 35;
+}
+
+.list-cell:empty {
+    -fx-opacity: 0;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: lightskyblue;
+   /* -fx-text-fill: white; */
+}
+    
+.list-cell:filled:selected {
+    -fx-background-color: -fx-background ;
+    -fx-background-insets: 0 ;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
