@@ -134,7 +134,7 @@ public class MainWindowController implements Initializable {
 //        service.play();
 
 
-        debugOpen();
+        //debugOpen();
         
         
     }    
