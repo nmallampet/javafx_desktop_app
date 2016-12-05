@@ -29,6 +29,10 @@ public class Sqp {
         -infile C:\\Users\\nmallam1\\Desktop\\testrn\\input.txt -out C:\\Users\\nmallam1\\Desktop\\testrn\\out
         */
         
+        
+        //git comment test
+        
+        
         //create parser
         CommandLineParser parser = new DefaultParser();
         
