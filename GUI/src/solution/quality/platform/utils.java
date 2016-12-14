@@ -227,15 +227,17 @@ public class utils {
         else
             return key.substring(4);
     }
-    static public void generateInputFile(ArrayList<String> suiteNames, String location) {
+    static public void generateInputFile(ArrayList<String> suiteNames, String location, sqpXML PROJMETA) {
         String path = location + utils.SEPARATOR + "suites";
         for(String s: suiteNames) {
             ArrayList<String> fileData = new ArrayList<>();
             fileData.add("<"+s+">");
             String pathT = path + utils.SEPARATOR + s;
-            File files = new File(pathT);
-            String [] directories = files.list((File current, String name) -> new File(current, name).isDirectory());
-            for(String t: directories) {
+            //File files = new File(pathT);
+            //String [] directories = files.list((File current, String name) -> new File(current, name).isDirectory());
+            ArrayList<String> directories1 = getListofTCsFromSuite(s, PROJMETA);
+            String[] tcs = directories1.parallelStream().toArray(String[]::new);
+            for(String t: tcs) {
                 fileData.add("*"+t);
                 String dataFilePath = pathT + utils.SEPARATOR + t + utils.SEPARATOR + "sqpData" + utils.SEPARATOR + "data.txt";
                 try {

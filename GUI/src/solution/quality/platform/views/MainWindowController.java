@@ -598,7 +598,7 @@ public class MainWindowController implements Initializable {
                     String sName = s.split(utils.LISTVIEW_SEP_KEY)[0];
                     _selectedSuiteNames.add(sName);
                 }
-                utils.generateInputFile(_selectedSuiteNames, LOCATION);
+                utils.generateInputFile(_selectedSuiteNames, LOCATION, PROJMETA);
             }
         });
         
@@ -611,7 +611,7 @@ public class MainWindowController implements Initializable {
                     String sName = s.split(utils.LISTVIEW_SEP_KEY)[0];
                     _selectedSuiteNames.add(sName);
                 }
-            utils.generateInputFile(_selectedSuiteNames, LOCATION);
+            utils.generateInputFile(_selectedSuiteNames, LOCATION, PROJMETA);
         });
         
         
