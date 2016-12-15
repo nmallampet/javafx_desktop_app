@@ -100,6 +100,7 @@ public class inputFileParser {
         structure = new createHierarchy(this.outputFileLoc);
         initArrayLists();
         initHashMaps();
+        //array tcs
         
         //get information from input file
         getInfo();
@@ -322,6 +323,7 @@ public class inputFileParser {
             ArrayList<String> tmpTcNames = this.HashSuiteTCMap.get(s);
             for(String t: tmpTcNames) {
                 String k = s + "_" + t;
+                System.out.println(k);
                 if(this.HashSuiteValidMap.get(k)) {
                     //ArrayList<String> props = this.HashSuiteTCPropsMap.get(k);
                     propStruct props = this.HashSuiteTCPropsMap2.get(k);

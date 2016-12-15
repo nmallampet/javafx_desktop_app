@@ -134,7 +134,7 @@ public class MainWindowController implements Initializable {
 //        service.play();
 
 
-        //debugOpen();
+        debugOpen();
         
         //testcomment
         
@@ -450,6 +450,8 @@ public class MainWindowController implements Initializable {
                 //this.LOCATION = file.getAbsolutePath();
                 this.LOCATION = file.getParent();
                 xmlMVC = new xmlController(this.LOCATION);
+                //create a new window
+                
                 loadFile(file);
                 
             }
