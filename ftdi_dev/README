@@ -1,0 +1,25 @@
+
+
+***make sure you have libMPSSE.dll, WinTypes.h, libMPSSE_spi.h, ftd2xx.h before compiling
+
+NOTES:
+main program is ftdiProgrammer, modifications should only take place in ftdiProgrammer.c
+
+
+HOW TO COMPILE:
+
+>gcc -c ftdiProgrammer.c -o ftdiProgrammer.o
+>gcc -o ftdi ftdiProgrammer.o -L. -lMPSSE
+
+
+HOW TO RUN:
+
+ftdi [bitfile location] [output directory]
+
+
+
+
+
+
+
+
