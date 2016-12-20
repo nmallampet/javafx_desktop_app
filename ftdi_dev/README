@@ -2,6 +2,8 @@
 
 ***make sure you have libMPSSE.dll, WinTypes.h, libMPSSE_spi.h, ftd2xx.h before compiling
 
+Get the dll file from the central SQP location on lattice server: [location TBD]
+
 NOTES:
 main program is ftdiProgrammer, modifications should only take place in ftdiProgrammer.c
 
